@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- HTML Form -->
+    <form>
+
+        <div class="row mt-5">
+            <div class="col-2"></div>
+            <div class="col-8">
+                
+                <!-- Form Card -->
+                <div class="card text-center">
+                    <div class="card-header fw-bold text-start">
+                        Payment Form Example
+                    </div>
+                    <div class="card-body">
+                        <!-- Red Field to display error message -->
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="mb-3 text-start">
+                                <label for="card-number" class="form-label">Card #</label>
+                                    <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="card-number" 
+                                    placeholder="XXXXXXXXXXXXXXXX"
+                                    minlength="13"
+                                    maxlength="16"
+                                    required
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="mb-3 text-start">
+                                <label for="cvs-number" class="form-label">CVC #</label>
+                                    <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="cvs-number" 
+                                    placeholder="0000"
+                                    minlength="1"
+                                    maxlength="4"
+                                    required
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-4 text-start">
+                                <label for="amount" class="form-label">Amount</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">$</span>
+                                    <input 
+                                    type="text" 
+                                    class="form-control"
+                                    minlength="1" 
+                                    maxlength="9"
+                                    id="amount"
+                                    required
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Row for First Last -->
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="mb-3 text-start">
+                                    <label for="firstName" class="form-label">First Name:</label>
+                                    <input type="text" class="form-control" id="firstName">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-3 text-start">
+                                    <label for="lastName" class="form-label">Last Name:</label>
+                                    <input type="text" class="form-control" id="lastName">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Row for First Last -->
+
+                        <!-- City State Postal Code -->
+                         <div class="row">
+                            <div class="col-6">
+                                <div class="mb-3 text-start">
+                                    <label for="city" class="form-label">City:</label>
+                                    <input type="text" class="form-control" id="city" required>
+                                </div>
+                            </div>
+                            <div class="col-3 text-start">
+                                <label for="city" class="form-label">State:</label>
+                                <select class="form-select" required>
+                                <option selected>Pick a State</option>
+                                <option value="1">Florida</option>
+                                <option value="2">Georgie</option>
+                                <option value="3">Hawaii</option>
+                                </select>
+                            </div>
+                            <div class="col-3">
+                                <div class="mb-3 text-start">
+                                    <label for="zip" class="form-label">Postal Code:</label>
+                                    <input type="text" class="form-control" id="zip" required>
+                                </div>
+                            </div>
+                         </div>
+
+
+                    </div>
+                    <div class="card-footer text-body-secondary d-flex justify-content-end">
+                        <button type="button" class="btn btn-secondary me-2">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Send</button>  
+                    </div>
+                </div>
+                <!-- Form Card -->
+
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+    </form>
+
+    
+</body>
+</html>
